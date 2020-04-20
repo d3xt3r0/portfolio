@@ -1,0 +1,18 @@
+h1 {
+  color: black;
+  font-family: GoogleFont;
+}
+
+@font-face {
+  font-family: GoogleFont;
+  src: url(fonts/OpenSans-Light.ttf);
+}
+
+li {
+
+	font-family: GoogleFont;
+}
+
+img {
+  border-radius: 50%;
+}

@@ -14,3 +14,14 @@ def get_repo_names():
 		repo_names.append(''.join(i.get_text().split()))
 	
 	return (json.dumps(repo_names))
+
+def get_profile_pic():
+
+	responce = requests.get("https://github.com/d3xt3r0")
+	soup = bs4.BeautifulSoup(responce.text, 'html.parser')
+
+	img_list = soup.find_all("img", attrs = {"class":"avatar width-full height-full avatar-before-user-status"})
+
+	return (json.dumps(img_list[0].get("src")))
+
+
