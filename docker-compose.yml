@@ -13,6 +13,6 @@ services:
     volumes:
       - ./website-frontend:/var/www/html
     ports:
-      - 5000:80
+      - 80:80
     depends_on:
       - python-api
